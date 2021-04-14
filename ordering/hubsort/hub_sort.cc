@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 #include <unordered_set>
+#include <omp.h>
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int main(int argc, char **argv) {
     vertices[edges[i]].second++;
   }
   ifile.close();
+  double start_time = omp_get_wtime();
   auto lambda = [](pair<int, int> &p1, pair<int, int> &p2) {
     return p1.second > p2.second;
   };
@@ -54,6 +56,7 @@ int main(int argc, char **argv) {
       neworder.push_back(i);
     }
   }
+  start_time = omp_get_wtime() - start_time; 
   int off = 0;
   for (const auto &vid : neworder) {
     ofile<<off<<'\n';
@@ -65,5 +68,6 @@ int main(int argc, char **argv) {
     }
   }
   ofile.close();
+  cout<<"hub sort ordering time cost : "<<start_time<<endl;
   return 0;
 }

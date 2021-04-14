@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 #include <unordered_set>
+#include <omp.h>
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int main(int argc, char **argv) {
     vertices[edges[i]].second++;
   }
   ifile.close();
+  double start_time = omp_get_wtime();
   int avg_degree = (ecnt * 2) / vcnt;
   ofstream ofile(argv[2], ios::out);
   ofile<<"AdjacencyGraph\n";
@@ -50,6 +52,7 @@ int main(int argc, char **argv) {
       neworder.push_back(i);
     }
   }
+  start_time = omp_get_wtime() - start_time; 
   int off = 0;
   for (const auto &vid : neworder) {
     ofile<<off<<'\n';
@@ -61,5 +64,6 @@ int main(int argc, char **argv) {
     }
   }
   ofile.close();
+  cout<<"hub cluster ordering time cost : "<<start_time<<endl;
   return 0;
 }
