@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 #include <unordered_set>
+#include <unordered_map>
 #include <omp.h>
 
 using namespace std;
@@ -53,7 +54,7 @@ int main(int argc, char **argv) {
     }
   }
   start_time = omp_get_wtime() - start_time;
-  unordered_set<int, int> id_remap;
+  unordered_map<int, int> id_remap;
   for (int i=0; i<vcnt; i++) {
     id_remap[i] = neworder[i];
   } 
