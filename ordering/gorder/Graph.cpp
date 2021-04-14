@@ -54,7 +54,7 @@ void Graph::readGraph(const string& fullname) {
 	int u, v;
 	vsize=0;
 	edgenum=0;
-	vector< pair<int, int> > edges;
+	vector<pair<int, int> > edges;
 	edges.reserve(100000000);
 
 	while(file>>u>>v){
@@ -62,6 +62,7 @@ void Graph::readGraph(const string& fullname) {
 			vsize=u;
 		if(v>vsize)
 			vsize=v;
+		if (u==v) continue;
 		edges.push_back(make_pair(u, v));
 	}
 	vsize++;
