@@ -15,8 +15,9 @@ int main(int argc, char **argv) {
     graph[vid1].push_back(vid2);
   }
   int count = 0;
-  for (const auto &pair : graph) {
+  for (auto &pair : graph) {
     int pre = -1;
+    sort(pair.second.begin(), pair.second.end());
     for (const auto &v : pair.second) {
       if (v == pre) {
         count++;
