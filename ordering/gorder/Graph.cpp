@@ -62,10 +62,11 @@ void Graph::readGraph(const string& fullname) {
 			vsize=u;
 		if(v>vsize)
 			vsize=v;
-		if (u==v) continue;
 		edges.push_back(make_pair(u, v));
 	}
 	vsize++;
+	cout<<"vertex num : "<<vsize<<endl;
+	cout<<"edge num : "<<edges.size()<<endl;
 	file.close();
 	graph.resize(vsize+1);
 	for(long long i=0; i<edges.size(); i++){
