@@ -61,21 +61,14 @@ void Graph::readGraph(const string& fullname) {
 	edges.reserve(100000000);
 
 	while(file>>u>>v){
-		if(fgets(line, 40, fp)){
-			if(u==v)
-				continue;
-			edgenum++;
-			if(u>vsize)
-				vsize=u;
-			if(v>vsize)
-				vsize=v;
-
-			edges.push_back(make_pair(u, v));
-		}
+		if(u>vsize)
+			vsize=u;
+		if(v>vsize)
+			vsize=v;
+		edges.push_back(make_pair(u, v));
 	}
 	vsize++;
-
-	fclose(fp);
+	file.close();
 	graph.resize(vsize+1);
 	for(long long i=0; i<edges.size(); i++){
 		graph[edges[i].first].outdegree++;
