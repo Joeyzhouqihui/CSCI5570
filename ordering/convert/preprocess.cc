@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     int pre = -1;
     sort(pair.second.begin(), pair.second.end());
     for (const auto &v : pair.second) {
-      if (v == pre) {
+      if (v == pre || v == pair.first) {
         count++;
       }
       pre = v;
