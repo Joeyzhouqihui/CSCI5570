@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
   start_time = omp_get_wtime() - start_time;
   unordered_map<int, int> id_remap;
   for (int i=0; i<vcnt; i++) {
-    id_remap[i] = neworder[i];
+    id_remap[neworder[i]] = i;
   }
   int off = 0;
   for (const auto &vid : neworder) {
