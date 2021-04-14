@@ -56,7 +56,11 @@ int main(int argc, char **argv) {
       neworder.push_back(i);
     }
   }
-  start_time = omp_get_wtime() - start_time; 
+  start_time = omp_get_wtime() - start_time;
+  unordered_set<int, int> id_remap;
+  for (int i=0; i<vcnt; i++) {
+    id_remap[i] = neworder[i];
+  }
   int off = 0;
   for (const auto &vid : neworder) {
     ofile<<off<<'\n';
@@ -64,7 +68,7 @@ int main(int argc, char **argv) {
   }
   for (const auto &vid : neworder) {
     for (int j=offsets[vid]; j<offsets[vid+1]; j++) {
-      ofile<<edges[j]<<'\n';
+      ofile<<id_remap[edges[j]]<<'\n';
     }
   }
   ofile.close();
