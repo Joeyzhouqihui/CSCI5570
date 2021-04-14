@@ -50,11 +50,8 @@ void Graph::clear() {
 
 void Graph::readGraph(const string& fullname) {
 	ifstream file(fullname.c_str(), ios::in);
-
-	char line[40];
+	cout<<"open file : "<<fullname<<endl;
 	int u, v;
-	const char* str=NULL;
-	
 	vsize=0;
 	edgenum=0;
 	vector< pair<int, int> > edges;
