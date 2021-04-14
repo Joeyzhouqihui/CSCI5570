@@ -10,7 +10,7 @@ using namespace std;
 int main(int argc, char **argv) {
   ifstream file(argv[1], ios::in);
   map<int, vector<int> > graph;
-  ofstream ofile("csr", ios::out);
+  ofstream ofile(argv[2], ios::out);
   int vid1, vid2, max_vid = -1, edge_cnt = 0;
   while (file>>vid1>>vid2) {
     graph[vid1].push_back(vid2);

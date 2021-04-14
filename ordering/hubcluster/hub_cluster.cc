@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
   }
   ifile.close();
   int avg_degree = (ecnt * 2) / vcnt;
-  ofstream ofile("csr_hub_cluster", ios::out);
+  ofstream ofile(argv[2], ios::out);
   ofile<<"AdjacencyGraph\n";
   ofile<<vcnt<<'\n';
   ofile<<ecnt<<'\n';

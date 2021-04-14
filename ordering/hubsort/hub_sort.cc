@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
   };
   sort(vertices.begin(), vertices.end(), lambda);
   int avg_degree = (ecnt * 2) / vcnt;
-  ofstream ofile("csr_hub_sort", ios::out);
+  ofstream ofile(argv[2], ios::out);
   ofile<<"AdjacencyGraph\n";
   ofile<<vcnt<<'\n';
   ofile<<ecnt<<'\n';

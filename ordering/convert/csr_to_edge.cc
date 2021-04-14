@@ -18,8 +18,7 @@ int main(int argc, char **argv) {
   for (int i=0; i<ecnt; i++) {
     file>>edges[i];
   }
-  string ofilename = "edge";
-  ofstream ofile(ofilename.c_str(), ios::out);
+  ofstream ofile(argv[2], ios::out);
   for (int i=0; i<vcnt; i++) {
     for (int j=offsets[i]; j<offsets[i+1]; j++) {
       ofile<<i<<" "<<edges[j]<<"\n";
