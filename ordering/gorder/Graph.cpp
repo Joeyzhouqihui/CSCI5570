@@ -67,6 +67,8 @@ void Graph::readGraph(const string& fullname) {
 	vsize++;
 	file.close();
 	graph.resize(vsize+1);
+	cout<<edges.size()<<endl;
+	cout<<(vsize+1)<<endl;
 	for(long long i=0; i<edges.size(); i++) {
 		graph[edges[i].first].outdegree++;
 		graph[edges[i].second].indegree++;
@@ -77,7 +79,7 @@ void Graph::readGraph(const string& fullname) {
 		graph[i].outstart=graph[i-1].outstart+graph[i-1].outdegree;
 		graph[i].instart=graph[i-1].instart+graph[i-1].indegree;
 	}
-	
+	cout<<"before sort"<<endl;
 	sort(edges.begin(), edges.end(), [](const pair<int, int>& a, const pair<int, int>& b)->bool{
 		if(a.first<b.first)
 			return true;
