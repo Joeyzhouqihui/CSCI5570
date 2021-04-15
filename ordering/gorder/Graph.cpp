@@ -78,7 +78,6 @@ void Graph::readGraph(const string& fullname) {
 		graph[i].outstart=graph[i-1].outstart+graph[i-1].outdegree;
 		graph[i].instart=graph[i-1].instart+graph[i-1].indegree;
 	}
-	cout<<"before sort"<<endl;
 	sort(edges.begin(), edges.end(), [](const pair<int, int>& a, const pair<int, int>& b)->bool{
 		if(a.first<b.first)
 			return true;
