@@ -63,12 +63,11 @@ void Graph::readGraph(const string& fullname) {
 		if(v>vsize)
 			vsize=v;
 		edges.push_back(make_pair(u, v));
+		edgenum++;
 	}
 	vsize++;
 	file.close();
 	graph.resize(vsize+1);
-	cout<<edges.size()<<endl;
-	cout<<(vsize+1)<<endl;
 	for(long long i=0; i<edges.size(); i++) {
 		graph[edges[i].first].outdegree++;
 		graph[edges[i].second].indegree++;
