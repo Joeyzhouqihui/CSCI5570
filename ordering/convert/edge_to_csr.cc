@@ -13,6 +13,11 @@ int main(int argc, char **argv) {
   ofstream ofile(argv[2], ios::out);
   int vid1, vid2, max_vid = -1, edge_cnt = 0;
   string graphname = "AdjacencyGraph";
+  int head = atoi(argv[3]);
+  string lie;
+  while (head--) {
+    file>>lie;
+  }
   while (file>>vid1>>vid2) {
     graph[vid1].push_back(vid2);
     edge_cnt++;
