@@ -6,6 +6,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <omp.h>
+#include <assert.h>
 
 using namespace std;
 
@@ -57,6 +58,7 @@ int main(int argc, char **argv) {
       neworder.push_back(i);
     }
   }
+  assert(neworder.size() == vcnt);
   start_time = omp_get_wtime() - start_time;
   unordered_map<int, int> id_remap;
   for (int i=0; i<vcnt; i++) {
