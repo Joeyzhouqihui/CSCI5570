@@ -204,7 +204,7 @@ void Graph::writeGraph(ostream& out){
 
 void Graph::PrintReOrderedGraph(const vector<int>& order){
 	ofstream out((name+"_Gorder.txt").c_str());
-
+	out<<"AdjacencyGraph\n";
 	vector<int>().swap(inedge);
 
 	vector< vector<int> > ReOrderedGraph(vsize);
