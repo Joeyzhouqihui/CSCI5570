@@ -34,7 +34,7 @@ double Hubsort::order() {
     return p1.second > p2.second;
   };
   double start_time = omp_get_wtime();
-  sort(vertices.begin(), vertices.end(), lambda);
+  std::sort(vertices.begin(), vertices.end(), lambda);
   int avg_degree = (ecnt_ * 2) / vcnt_;
   std::vector<int> written(vcnt_, 0);
   for (int i=0; i<vcnt_; i++) {
