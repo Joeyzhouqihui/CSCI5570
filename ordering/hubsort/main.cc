@@ -7,8 +7,10 @@ int main(int argc, char **argv) {
   ofile = argv[2];
   Hubsort hubsort;
   hubsort.readGraph(ifile);
+  std::cout<<"finish read graph"<<std::endl;
   double cost = hubsort.order();
-  hubsort.saveGraph(ofile);
   std::cout<<"hub sort cost : "<<cost<<std::endl;
+  hubsort.saveGraph(ofile);
+  std::cout<<"finish save graph"<<std::endl;
   return 0;
 }

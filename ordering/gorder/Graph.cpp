@@ -200,7 +200,6 @@ void Graph::PrintReOrderedGraph(const vector<int>& order, string filename){
 		sort(ReOrderedGraph[u].begin(), ReOrderedGraph[u].end());
 	}
 */
-	out<<"AdjacencyGraph\n";
 	out<<vsize<<'\n';
 	out<<edgenum<<'\n';
 	int off = 0;
