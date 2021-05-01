@@ -1,5 +1,5 @@
 set(CMAKE_CXX_STANDARD 14)
 project (hubsort)
 aux_source_directory(. DIR_SRCS)
+SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-pthread")
 add_executable(hubsort ${DIR_SRCS})
-target_link_libraries(hubsort pthread)
