@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hubsort.dir/main.cc.o"
-  "CMakeFiles/hubsort.dir/hubsort.cc.o"
+  "CMakeFiles/hubsort.dir/main.o"
+  "CMakeFiles/hubsort.dir/hubsort.o"
   "hubsort.pdb"
   "hubsort"
 )

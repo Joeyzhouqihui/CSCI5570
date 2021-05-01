@@ -57,64 +57,64 @@ include CMakeFiles/hubsort.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hubsort.dir/flags.make
 
-CMakeFiles/hubsort.dir/main.cc.o: CMakeFiles/hubsort.dir/flags.make
-CMakeFiles/hubsort.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hubsort.dir/main.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hubsort.dir/main.cc.o -c /root/github/CSCI5570/ordering/hubsort/main.cc
+CMakeFiles/hubsort.dir/main.o: CMakeFiles/hubsort.dir/flags.make
+CMakeFiles/hubsort.dir/main.o: ../main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hubsort.dir/main.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hubsort.dir/main.o -c /root/github/CSCI5570/ordering/hubsort/main.cc
 
-CMakeFiles/hubsort.dir/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hubsort.dir/main.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/github/CSCI5570/ordering/hubsort/main.cc > CMakeFiles/hubsort.dir/main.cc.i
+CMakeFiles/hubsort.dir/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hubsort.dir/main.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/github/CSCI5570/ordering/hubsort/main.cc > CMakeFiles/hubsort.dir/main.i
 
-CMakeFiles/hubsort.dir/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hubsort.dir/main.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/github/CSCI5570/ordering/hubsort/main.cc -o CMakeFiles/hubsort.dir/main.cc.s
+CMakeFiles/hubsort.dir/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hubsort.dir/main.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/github/CSCI5570/ordering/hubsort/main.cc -o CMakeFiles/hubsort.dir/main.s
 
-CMakeFiles/hubsort.dir/main.cc.o.requires:
+CMakeFiles/hubsort.dir/main.o.requires:
 
-.PHONY : CMakeFiles/hubsort.dir/main.cc.o.requires
+.PHONY : CMakeFiles/hubsort.dir/main.o.requires
 
-CMakeFiles/hubsort.dir/main.cc.o.provides: CMakeFiles/hubsort.dir/main.cc.o.requires
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.cc.o.provides.build
-.PHONY : CMakeFiles/hubsort.dir/main.cc.o.provides
+CMakeFiles/hubsort.dir/main.o.provides: CMakeFiles/hubsort.dir/main.o.requires
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.o.provides.build
+.PHONY : CMakeFiles/hubsort.dir/main.o.provides
 
-CMakeFiles/hubsort.dir/main.cc.o.provides.build: CMakeFiles/hubsort.dir/main.cc.o
+CMakeFiles/hubsort.dir/main.o.provides.build: CMakeFiles/hubsort.dir/main.o
 
 
-CMakeFiles/hubsort.dir/hubsort.cc.o: CMakeFiles/hubsort.dir/flags.make
-CMakeFiles/hubsort.dir/hubsort.cc.o: ../hubsort.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hubsort.dir/hubsort.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hubsort.dir/hubsort.cc.o -c /root/github/CSCI5570/ordering/hubsort/hubsort.cc
+CMakeFiles/hubsort.dir/hubsort.o: CMakeFiles/hubsort.dir/flags.make
+CMakeFiles/hubsort.dir/hubsort.o: ../hubsort.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hubsort.dir/hubsort.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hubsort.dir/hubsort.o -c /root/github/CSCI5570/ordering/hubsort/hubsort.cc
 
-CMakeFiles/hubsort.dir/hubsort.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hubsort.dir/hubsort.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/github/CSCI5570/ordering/hubsort/hubsort.cc > CMakeFiles/hubsort.dir/hubsort.cc.i
+CMakeFiles/hubsort.dir/hubsort.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hubsort.dir/hubsort.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/github/CSCI5570/ordering/hubsort/hubsort.cc > CMakeFiles/hubsort.dir/hubsort.i
 
-CMakeFiles/hubsort.dir/hubsort.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hubsort.dir/hubsort.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/github/CSCI5570/ordering/hubsort/hubsort.cc -o CMakeFiles/hubsort.dir/hubsort.cc.s
+CMakeFiles/hubsort.dir/hubsort.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hubsort.dir/hubsort.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/github/CSCI5570/ordering/hubsort/hubsort.cc -o CMakeFiles/hubsort.dir/hubsort.s
 
-CMakeFiles/hubsort.dir/hubsort.cc.o.requires:
+CMakeFiles/hubsort.dir/hubsort.o.requires:
 
-.PHONY : CMakeFiles/hubsort.dir/hubsort.cc.o.requires
+.PHONY : CMakeFiles/hubsort.dir/hubsort.o.requires
 
-CMakeFiles/hubsort.dir/hubsort.cc.o.provides: CMakeFiles/hubsort.dir/hubsort.cc.o.requires
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.cc.o.provides.build
-.PHONY : CMakeFiles/hubsort.dir/hubsort.cc.o.provides
+CMakeFiles/hubsort.dir/hubsort.o.provides: CMakeFiles/hubsort.dir/hubsort.o.requires
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.o.provides.build
+.PHONY : CMakeFiles/hubsort.dir/hubsort.o.provides
 
-CMakeFiles/hubsort.dir/hubsort.cc.o.provides.build: CMakeFiles/hubsort.dir/hubsort.cc.o
+CMakeFiles/hubsort.dir/hubsort.o.provides.build: CMakeFiles/hubsort.dir/hubsort.o
 
 
 # Object files for target hubsort
 hubsort_OBJECTS = \
-"CMakeFiles/hubsort.dir/main.cc.o" \
-"CMakeFiles/hubsort.dir/hubsort.cc.o"
+"CMakeFiles/hubsort.dir/main.o" \
+"CMakeFiles/hubsort.dir/hubsort.o"
 
 # External object files for target hubsort
 hubsort_EXTERNAL_OBJECTS =
 
-hubsort: CMakeFiles/hubsort.dir/main.cc.o
-hubsort: CMakeFiles/hubsort.dir/hubsort.cc.o
+hubsort: CMakeFiles/hubsort.dir/main.o
+hubsort: CMakeFiles/hubsort.dir/hubsort.o
 hubsort: CMakeFiles/hubsort.dir/build.make
 hubsort: CMakeFiles/hubsort.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hubsort"
@@ -125,8 +125,8 @@ CMakeFiles/hubsort.dir/build: hubsort
 
 .PHONY : CMakeFiles/hubsort.dir/build
 
-CMakeFiles/hubsort.dir/requires: CMakeFiles/hubsort.dir/main.cc.o.requires
-CMakeFiles/hubsort.dir/requires: CMakeFiles/hubsort.dir/hubsort.cc.o.requires
+CMakeFiles/hubsort.dir/requires: CMakeFiles/hubsort.dir/main.o.requires
+CMakeFiles/hubsort.dir/requires: CMakeFiles/hubsort.dir/hubsort.o.requires
 
 .PHONY : CMakeFiles/hubsort.dir/requires
 

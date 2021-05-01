@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/hubsort.dir/main.cc.o CMakeFiles/hubsort.dir/hubsort.cc.o  -o hubsort -rdynamic -lpthread 
+/usr/bin/c++   -pthread   CMakeFiles/hubsort.dir/main.o CMakeFiles/hubsort.dir/hubsort.o  -o hubsort -rdynamic 

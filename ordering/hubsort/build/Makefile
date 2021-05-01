@@ -123,59 +123,35 @@ hubsort/fast:
 	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/build
 .PHONY : hubsort/fast
 
-hubsort.o: hubsort.cc.o
-
+# target to build an object file
+hubsort.o:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.o
 .PHONY : hubsort.o
 
-# target to build an object file
-hubsort.cc.o:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.cc.o
-.PHONY : hubsort.cc.o
-
-hubsort.i: hubsort.cc.i
-
+# target to preprocess a source file
+hubsort.i:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.i
 .PHONY : hubsort.i
 
-# target to preprocess a source file
-hubsort.cc.i:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.cc.i
-.PHONY : hubsort.cc.i
-
-hubsort.s: hubsort.cc.s
-
+# target to generate assembly for a file
+hubsort.s:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.s
 .PHONY : hubsort.s
 
-# target to generate assembly for a file
-hubsort.cc.s:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/hubsort.cc.s
-.PHONY : hubsort.cc.s
-
-main.o: main.cc.o
-
+# target to build an object file
+main.o:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cc.o:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.cc.o
-.PHONY : main.cc.o
-
-main.i: main.cc.i
-
+# target to preprocess a source file
+main.i:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cc.i:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.cc.i
-.PHONY : main.cc.i
-
-main.s: main.cc.s
-
-.PHONY : main.s
-
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.cc.s
-.PHONY : main.cc.s
+main.s:
+	$(MAKE) -f CMakeFiles/hubsort.dir/build.make CMakeFiles/hubsort.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:

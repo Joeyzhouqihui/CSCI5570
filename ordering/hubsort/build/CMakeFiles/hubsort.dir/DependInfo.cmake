@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/github/CSCI5570/ordering/hubsort/hubsort.cc" "/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles/hubsort.dir/hubsort.cc.o"
-  "/root/github/CSCI5570/ordering/hubsort/main.cc" "/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles/hubsort.dir/main.cc.o"
+  "/root/github/CSCI5570/ordering/hubsort/hubsort.cc" "/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles/hubsort.dir/hubsort.o"
+  "/root/github/CSCI5570/ordering/hubsort/main.cc" "/root/github/CSCI5570/ordering/hubsort/build/CMakeFiles/hubsort.dir/main.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
