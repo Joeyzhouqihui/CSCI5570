@@ -34,12 +34,9 @@ int main(int argc, char* argv[]){
 	srand(time(0));
 
 	Graph g;
-	start=clock();
 	g.readGraph(ifilename);
 	g.Transform();
-	cout << name << " readGraph is complete." << endl;
-	end=clock();
-	cout << "Time Cost: " << (double)(end-start)/CLOCKS_PER_SEC << endl;
+	cout <<"Read graph data complete"<< endl;
 
 	start=clock();
 	vector<int> order;
