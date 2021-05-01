@@ -36,15 +36,15 @@ double Hubsort::order() {
   double start_time = omp_get_wtime();
   sort(vertices.begin(), vertices.end(), lambda);
   int avg_degree = (ecnt_ * 2) / vcnt_;
-  std::unordered_set<int> written;
+  std::vector<int> written(vcnt_, 0);
   for (int i=0; i<vcnt_; i++) {
     if (vertices[i].second > avg_degree) {
       new_order_.push_back(vertices[i].first);
-      written.insert(vertices[i].first);
+      written[vertices[i].first] = 1;
     }
   }
   for (int i=0; i<vcnt_; i++) {
-    if (written.find(i) == written.end()) {
+    if (written[i] == 0) {
       new_order_.push_back(i);
     }
   }
