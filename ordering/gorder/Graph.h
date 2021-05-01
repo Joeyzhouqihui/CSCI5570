@@ -69,22 +69,10 @@ class Graph{
 		~Graph();
 		void clear();
 		void readGraph(const string& fullname);
-		void writeGraph(ostream&);
 		void PrintReOrderedGraph(const vector<int>& order);
-		void GraphAnalysis();
-		void RemoveDuplicate(const string& fullname);
-		
-		void strTrimRight(string& str);
-		static vector<string> split(const string &s, char delim);
-		static vector<string>& split(const string &s, char delim, vector<string> &elems);
-
-		void GapCount();
-		double GapCost(vector<int>& order);
 		void Transform();
 		void GorderGreedy(vector<int>& order, int window);
-
 		void RCMOrder(vector<int>& order);
-		unsigned long long LocalityScore(const int w);
 };
 
 }
