@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/github/CSCI5570/ordering/hubsort/hubsort.cc
+hubsort.h
+/root/github/CSCI5570/ordering/hubsort/hubsort.h
+
+/root/github/CSCI5570/ordering/hubsort/hubsort.h
+vector
+-
+map
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+unordered_set
+-
+unordered_map
+-
+omp.h
+-
+assert.h
+-
+
+/root/github/CSCI5570/ordering/hubsort/main.cc
+hubsort.h
+/root/github/CSCI5570/ordering/hubsort/hubsort.h
+iostream
+-
+

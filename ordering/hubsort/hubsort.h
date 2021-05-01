@@ -1,6 +1,6 @@
 #ifndef HUBSORT_H
+#define HUBSORT_Hs
 
-#include "order.h"
 #include <vector>
 #include <map>
 #include <iostream>
@@ -9,8 +9,9 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <omp.h>
+#include <assert.h>
 
-class Hubsort : public Order {
+class Hubsort {
   private:
     int vcnt_, ecnt_;
     std::map<int, std::vector<int> > edges_;
@@ -24,4 +25,4 @@ class Hubsort : public Order {
     virtual void saveGraph(std::string filename);
 };
 
-#define HUBSORT_H
+#endif

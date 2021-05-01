@@ -1,9 +1,9 @@
-#include "hubsort.h"
+#include "hubcluster.h"
 
 Hubcluster::Hubcluster() : vcnt_(0), ecnt_(0) {}
 
 void Hubcluster::readGraph(std::string filename) {
-  std::ifstream ifile(filename.c_str(), ios::in);
+  std::ifstream ifile(filename.c_str(), std::ios::in);
   int vid1, vid2;
   int max_id = -1;
   while (ifile>>vid1>>vid2) {
@@ -48,17 +48,17 @@ void Hubcluster::saveGraph(std::string filename) {
   for (int i=0; i<vcnt_; i++) {
     id_remap[new_order_[i]] = i;
   }
-  std::ofstream ofile(filename.c_str(), ios::out);
+  std::ofstream ofile(filename.c_str(), std::ios::out);
   ofile<<"AdjacencyGraph\n";
   ofile<<vcnt_<<'\n';
   ofile<<ecnt_<<'\n';
   int off = 0;
-  for (const auto &vid : neworder) {
+  for (const auto &vid : new_order_) {
     ofile<<off<<'\n';
     off += edges_[vid].size();
   }
-  for (const auto &vid : neworder) {
-    for (const auto &adj : edges[vid]) {
+  for (const auto &vid : new_order_) {
+    for (const auto &adj : edges_[vid]) {
       ofile<<id_remap[adj]<<'\n';
     }
   }
