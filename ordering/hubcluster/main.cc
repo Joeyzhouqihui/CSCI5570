@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
   hubcluster.readGraph(ifile);
   std::cout<<"finish read graph"<<std::endl;
   double cost = hubcluster.order();
-  std::cout<<"hub sort cost : "<<cost<<std::endl;
+  std::cout<<"hub cluster cost : "<<cost<<std::endl;
   hubcluster.saveGraph(ofile);
   std::cout<<"finish save graph"<<std::endl;
   return 0;
