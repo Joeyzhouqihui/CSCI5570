@@ -1,1 +1,0 @@
-/usr/bin/c++   -pthread   CMakeFiles/hubsort.dir/main.o CMakeFiles/hubsort.dir/hubsort.o  -o hubsort -rdynamic 
