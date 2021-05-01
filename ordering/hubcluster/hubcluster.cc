@@ -26,15 +26,15 @@ void Hubcluster::readGraph(std::string filename) {
 double Hubcluster::order() {
   double start_time = omp_get_wtime();
   int avg_degree = (ecnt_ * 2) / vcnt_;
-  std::unordered_set<int> written;
+  std::vector<int> written(vcnt_, 0);
   for (int i=0; i<vcnt_; i++) {
     if (weight_[i] > avg_degree) {
       new_order_.push_back(i);
-      written.insert(i);
+      written[i] = 1;
     }
   }
   for (int i=0; i<vcnt_; i++) {
-    if (written.find(i) == written.end()) {
+    if (written[i] == 0) {
       new_order_.push_back(i);
     }
   }
