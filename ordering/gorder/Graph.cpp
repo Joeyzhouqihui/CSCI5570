@@ -1,15 +1,3 @@
-/*
-MIT License
-
-Copyright (c) 2016, Hao Wei.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-
 #include "Graph.h"
 
 #ifdef __GNUC__
@@ -191,8 +179,8 @@ void Graph::Transform(){
 	}
 }
 
-void Graph::PrintReOrderedGraph(const vector<int>& order){
-	ofstream out((name+"_Gorder.txt").c_str());
+void Graph::PrintReOrderedGraph(const vector<int>& order, string filename){
+	ofstream out(filename.c_str());
 	out<<"AdjacencyGraph\n";
 	vector<int>().swap(inedge);
 
@@ -212,9 +200,17 @@ void Graph::PrintReOrderedGraph(const vector<int>& order){
 		sort(ReOrderedGraph[u].begin(), ReOrderedGraph[u].end());
 	}
 */
-	for(int u=0; u<vsize; u++){
-		for(int j=0; j<ReOrderedGraph[u].size(); j++){
-			out << u << '\t' << ReOrderedGraph[u][j] << endl;
+	out<<"AdjacencyGraph\n";
+	out<<vsize<<'\n';
+	out<<edgenum<<'\n';
+	int off = 0;
+	for (int i=0; i<vsize; i++) {
+		out<<off<<'\n';
+		off += ReOrderedGraph[i].size();
+	}
+	for (int i=0; i<vsize; i++) {
+		for (int j=0; j<ReOrderedGraph[u].size(); j++) {
+			out<<ReOrderedGraph[i][j]<<'\n';
 		}
 	}
 	out.close();

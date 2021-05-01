@@ -36,12 +36,17 @@ class Vertex{
 
 class Gorder : public Order{
   private:
-    int vcnt_, ecnt_;
-    std::vector<Vertex> graph_;
-		std::vector<int> outedge_;
-		std::vector<int> inedge_;
+    int vsize;
+		long long edgenum;
+		std::vector<Vertex> graph;
+		std::vector<int> outedge;
+		std::vector<int> inedge;
 
   public:
+		Gorder();
+		void Transform();
+		void RCMOrder(std::vector<int>& order);
+		void GorderGreedy(std::vector<int>& order, int window);
     virtual void readGraph(std::string filename);
     virtual void order();
     virtual void saveGraph(std::string filename);
